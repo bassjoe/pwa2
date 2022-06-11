@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="manifest" href="manifest.json">
+		<meta name="description" content="This is PWA #2 (pure JS).">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="darkorchid">
+		<link rel="apple-touch-icon" href="icon-192.png">
+		<link rel="shortcut icon" type="image/png" href="icon-192.png"/>
+		<title>PWA-2</title>
+	</head>
+	<body>
+		<h1>PWA-2</h1>
+		<script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('sw.js');
+			}
+		</script>
+	</body>
+</html>
+
